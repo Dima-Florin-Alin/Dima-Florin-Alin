@@ -1,6 +1,99 @@
 
-nav a {
-  color:green;
-  padding-left: 30px;
-  text-transform: uppercase;
+
+nav a
+{
+    float: right;
+
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav a:hover
+{
+    color: red;
+}
+
+body
+{
+    background-color: white;
+}
+img
+{
+    width: 350px;
+    height: 500px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    border-top-style: dotted;;
+}
+
+.hero-banner
+{
+    height: 400px;
+
+    background-image: url(assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#qshop
+{
+    font-size: 20px;
+
+    padding: 15px;
+
+    color: grey;
+}
+.hero-text-button
+{
+    padding: 150px;
+
+    text-align: center;
+}
+a.learn-more
+{
+    padding: 5px;
+
+    border-spacing: 10px;
+
+    text-decoration: none;
+    background: radial-gradient(blue, yellow, red);
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+section.blue
+{
+    height: 150px;
+
+    background-color: rgb(0,100,150);
+    background-size: contain;
+}
+#corner
+{
+    font-size: 15px;
+
+    text-align: left;
+
+    color: white;
+}
+
+.fa-user{
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 50px;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.fa-envelope-o {
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 50px;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding: 20px;
 }
