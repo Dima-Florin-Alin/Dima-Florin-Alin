@@ -15,9 +15,8 @@
   text-decoration: none;
   color:white;
 }
-}
-h3 {
-    text-align: center;
+form h3 {
+  padding-left: 50%;
 }
 nav {
     padding-top: 25px;

@@ -1,0 +1,85 @@
+.topbar {
+    background: black;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.cont {
+    width: 100px;
+    height: auto;
+    padding-left: 300px;
+    position: absolute;
+}
+.cont a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    padding-top: 25px;
+    padding-right: 200px;
+    float: right;
+    color: white;
+}
+nav a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.contact {
+  margin-top: 90px;
+text-align: center;
+}
+body {
+  background: linear-gradient(-90deg, rgb(76, 236, 20), rgb(8, 233, 139));
+
+}
+.contact {
+  text-transform: uppercase;
+  padding-top: 50px;
+
+}
+.contact h2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.icons {
+  display: inline-flex;
+  margin: ;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.icon-wrapper {
+  width: 33.33%;
+  color: rgb(247, 239, 235);
+  text-align: center;
+
+}
+.plic {
+  border: 2px solid yellow;
+  padding: 50px;
+  border-radius: 50%;
+}
+
+.mobile
+  {
+    border: 2px solid red;
+    padding: 50px;
+    border-radius: 50%;
+  }
+.face {
+  border: 2px solid blue;
+  padding: 50px;
+  border-radius: 50%;
+}
+.icon-wrapper h5 {
+  color: black;
+
+}
+.icon-wrapper a {
+  text-decoration: none;
+  color: white;
+}
