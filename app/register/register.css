@@ -1,0 +1,68 @@
+.topbar {
+    background: black;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.cont {
+    width: 100px;
+    height: auto;
+    padding-left: 300px;
+    position: absolute;
+}
+.cont a {
+  text-decoration: none;
+  color:white;
+}
+}
+h2 {
+    color: white;
+}
+nav {
+    padding-top: 25px;
+    padding-right: 300px;
+    float: right;
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.form {
+    background: #39dc60;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+.form-content {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+input {
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+button {
+  background: transparent;
+  float: right;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius:10%;
+}
+button:hover{
+  background: white;
+}
+input:invalid {
+  border: 2px solid red;
+}
+footer h1 {
+  text-align: center;
+}
+footer {
+  bottom: 0px;
+  left: 25%;
+  right: 25%;
+}
