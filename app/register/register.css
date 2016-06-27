@@ -16,16 +16,17 @@
   color:white;
 }
 }
-h2 {
-    color: white;
+h3 {
+    text-align: center;
 }
 nav {
     padding-top: 25px;
-    padding-right: 300px;
+    padding-right: 200px;
     float: right;
     color: white;
 }
 nav a {
+    padding-left: 10px;
     text-decoration: none;
     color: white;
 }
@@ -44,6 +45,9 @@ input {
     width: 100%;
     border: 1px solid blue;
     border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 button {
   background: transparent;

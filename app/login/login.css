@@ -22,11 +22,12 @@ h2 {
 
 nav {
   padding-top: 25px;
-  padding-right: 300px;
+  padding-right: 200px;
   float: right;
   color: white;
 }
 nav a{
+  padding-left: 10px;
   text-decoration: none;
   color: white;
  }
