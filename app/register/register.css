@@ -65,6 +65,7 @@ footer h1 {
   text-align: center;
 }
 footer {
+  position: absolute;
   bottom: 0px;
   left: 25%;
   right: 25%;

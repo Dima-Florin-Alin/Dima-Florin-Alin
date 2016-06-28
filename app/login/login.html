@@ -9,7 +9,11 @@
     </title>
     <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -23,23 +27,26 @@
             </nav>
         </header>
     </section>
-    <section class="form">
-        <form class="form-content">
-            <h3>Login</h3>
-            <label for="username"> Username</label>
-            <br />
-            <input type="text" name="username" id="username" placeholder="Insert Username" required>
-            <br />
-            <label for="password">Password</label>
-            <br />
-            <input type="password" name="password" id="password" placeholder="Insert Your Password" required/>
-            <br />
-            <input type="checkbox" name="keep" /> keep me logged in
-            <button type="button"> Login
-            </button>
-            <div class="register-link">
-                <h6> Don't have an account?  <a href="../register/register.html"><strong>Register</strong></a></h6>
-            </div>
+    <section>
+        <div class="container">
+
+            <form role="form" class="form-horizontal">
+                <h3>Login</h3>
+                <div class="form-group">
+                    <label for="username" class="control-label col-md-2 col-sm-6"> Username</label>
+                    <input type="text" name="username" id="username" placeholder="Insert Username" required class="form-control col-md-10 col-sm-6">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="control-label col-md-2 col-sm-2">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Insert Your Password" required class="form-control col-md-10 col-sm-10" />
+                </div>
+                <input type="checkbox" name="keep" /> keep me logged in
+                <button type="button"> Login
+                </button>
+                <div class="register-link">
+                    <h6> Don't have an account?  <a href="../register/register.html"><strong>Register</strong></a></h6>
+                </div>
+        </div>
         </form>
     </section>
 

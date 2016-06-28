@@ -4,24 +4,45 @@
 <head>
     <title> Hi Summer Internship </title>
     <style></style>
-    <link rel="stylesheet" type="text/css" href="app.css">
+
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+
+
 </head>
 
-<body>
+<body id="top">
+
+    <header id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class "navbar-header">
+                    <button type="button" data-target="#myNavbar" data-toggle="collapse" class="btn btn-default btn-lg navbar-toggle">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">QShop</a>
+                </div>
+                <!-- Colection of navigation liks-->
+                <div id="myNavbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#bottom"> go to bottom </a></li>
+                        <li><a href="login/login.html">Login</a></li>
+                        <li><a href="register/register.html">Register</a></li>
+                        <li> <a href="about/about.html">About</a></li>
+                        <li> <a href="contact/contact.html">Contact</a></li>
+                        <li> <a href="https://github.com/Dima-Florin-Alin/Dima-Florin-Alin/commit/ca203319b1a6d2b9f39a8f40c86d068b21c943b5">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="hero-banner" id="top">
-        <header>
-            <nav>
-                <a href="#bottom"> go to bottom </a>
-                <a href="login/login.html">Login</a>
-                <a href="register/register.html">Register</a>
-                <a href="about/about.html">About</a>
-                <a href="contact/contact.html">Contact</a>
-                <a href="https://github.com/Dima-Florin-Alin/Dima-Florin-Alin/commit/ca203319b1a6d2b9f39a8f40c86d068b21c943b5">Github</a>
-            </nav>
-        </header>
         <p id="corner">
             QShop
         </p>
@@ -37,33 +58,28 @@
             Lorem Ipsum
             <br /> Contrary to popular belief, Lorem Ipsum is not a simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
         </div>
-        <section>
-            <div id="icons">
-                <div class="col-inline">
-                    <div class="image-wrapper">
+        <section class="container-blue">
+            <div class="row">
+                <div class="icon col-md-4">
 
                         <a href="#">
                             <img src="assets/images/user-icon.png" />
                         </a>
                     </div>
-                </div>
-                <div class="col-inline">
-                    <div class="image-wrapper">
 
+                    <div class="icon col-md-4">
                         <a href="#">
                             <img src="assets/images/message-icon.jpg" />
                         </a>
                     </div>
-                </div>
-                <div class="col-inline">
-                    <div class="image-wrapper">
+
+                    <div class="icon col-md-4">
 
                         <a href="#">
                             <img src="assets/images/clock-icon.jpg" />
                         </a>
                     </div>
                 </div>
-            </div>
 
         </section>
     </section>
@@ -73,23 +89,26 @@
     </h1>
         <h4>Contrary to popular belief, Lorem Ipsum is not a simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
     </h4>
-        <div class="content-images group">
-            <div class="img-wrapper">
+        <div class="container content-images group">
+          <div class="row">
+
+            <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p1.jpg" />
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p2.jpg" />
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p3.jpg" />
             </div>
-            <div class="img-wrapper">
+
+              <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p4.jpg" />
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p5.jpg" />
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper col-md-4 col-sm-12">
                 <img src="assets/images/p6.jpg" />
             </div>
         </div>
