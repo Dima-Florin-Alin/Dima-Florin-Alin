@@ -29,31 +29,17 @@ nav a {
     text-decoration: none;
     color: white;
 }
-.form {
+.container {
     background: #39dc60;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 90px;
+    margin-top: 90px;
+    width: auto;
 }
 .form-content {
     width: 50%;
     height: auto;
     margin: auto;
-}
-input {
-    width: 100%;
-    border: 1px solid blue;
-    border-radius: 2px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-}
-button {
-  background: transparent;
-  float: right;
-  margin-top: 10px;
-  padding: 5px;
-  border-radius:10%;
+
 }
 button:hover{
   background: white;

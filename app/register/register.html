@@ -10,7 +10,11 @@
 
     <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="register.css">
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -24,25 +28,32 @@
             </nav>
         </header>
     </section>
-    <section class="form">
-        <form class="form-content">
+    <section class="container">
+        <form role="form">
             <h3>Register</h3>
-            <label for="username"> Username</label>
-            <br />
-            <input type="text" name="username" id="username" placeholder="Insert Username" required>
-            <br />
+            <div class="form-group inner-addon left-addon">
+                <label for="username"> Username</label>
+                <i class="glyphicon glyphicon-user"></i>
+                <input type="text" name="username" id="username" placeholder="Insert Username" class="form-control"></input>
+            </div>
+          </div>
+            <div class="form-group">
             <label for="password">Password</label>
-            <br />
-            <input type="password" name="password" id="password" placeholder="Insert Your Password" required/>
-            <label>Confirm Password
-            <input type="password" name="confirm-password" id="confirm" placeholder="Confirm Password" required/>
-          </label>
-            <br />
-            <label>Email
-            <input type="email" name="email" placeholder="name@domain.com" required />
-          </label>
-            <button type="button"> Register
-            </button>
+            <i class="glyphicon glyphicon-alert"></i>
+
+            <input type="password" name="password" id="password" placeholder="Insert Your Password" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <i class="glyphicon glyphicon-ok-sign"></i>
+                <input type="password" name="confirm-password" id="confirm" placeholder="Confirm Password" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label class>Email</label>
+            <i class="glyphicon glyphicon-envelope"></i>
+                <input type="email" name="email" placeholder="name@domain.com" class="form-control"/>
+            </div>
+            <button type="button" class="btn btn-success"> Register</button>
         </form>
     </section>
     <footer>
