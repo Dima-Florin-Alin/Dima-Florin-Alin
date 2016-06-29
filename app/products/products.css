@@ -1,0 +1,107 @@
+.home {
+    text-align: center;
+    padding-top: 15px;
+}
+div.nav {
+    text-align: center;
+}
+.row a {
+    color: black;
+}
+header div.container {
+  background-color: white;
+  width: 100%;
+}
+.banner {
+    height: 200px;
+    background: rgb(10, 137, 145);
+    margin-top: 50px;
+}
+.banner h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+.text {
+  text-align: center;
+}
+.container-text {
+  height: 100px;
+}
+section.big-container {
+  width: 80%;
+  margin: auto;
+}
+section.products {
+  margin: auto;
+}
+div > a > img {
+  height: 200px;
+  width: 100%;
+}
+.col-md-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+div .row h4, h5 {
+
+}
+.price {
+  box-shadow: 5px 5px 20px gray;
+  padding: 10px;
+}
+
+.price:hover {
+  transform: scale(0.9);
+  opacity: 0.6;
+  transition-duration: 2s;
+}
+.end {
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.container.products {
+  background: rgb(195, 184, 155)
+}
+ body {
+background: rgb(155, 194, 153)
+}
+nav.pag {
+  text-align: center;
+}
+.space {
+  padding-top: 15px;
+}
+.search-bar {
+  padding-top: 30px;
+}
+
+div.side-nav ul li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+.search-text {
+  padding-left: 50px;
+}
+div.side-nav ul {
+  padding-left: 0px;
+}
+div.sale {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  padding: 7px;
+  z-index: 15;
+}
+div.chart {
+  margin-top: 10px;
+  position: absolute;
+  top: 0px;
+  height: 25px;
+  background: black;
+  width: 91%;
+  color: white;
+}
