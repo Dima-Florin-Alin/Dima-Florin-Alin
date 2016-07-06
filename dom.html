@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+
+
+
+</head>
+
+<body>
+
+    <div id="content">
+        <p>Hello world</p>
+        <span> I am the best </span>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+
+        <div class="container">
+            <div id="div1" class="div"><span>1</span>
+          </div>
+
+            <div id="div2" class="div"><span>2</span>  </div>
+            <div id="div3" class="div"><span>3</span>  </div>
+
+        </div>
+        <div class="container">
+            <div id="div4" class="div"><span>4</span>  </div>
+            <div id="div5" class="div"><span>5</span>  </div>
+            <div id="div6" class="div"><span>6</span>  </div>
+
+        </div>
+</div>
+
+      <script>
+
+    (function(){
+
+var elements=   document.querySelectorAll('div.container');
+     for(var i=0; i<elements.length; i++)
+        {
+          //console.log(elements[i].innerHTML='dima')
+          var a = elements[i].querySelectorAll('span')
+          for(var g=0; g<a.length; g++){
+           console.log(a[g].innerHTML)
+          a[g].style.fontWeight="bold", a[g].style.color="red";
+         var nou=document.createElement('SPAN')
+         var text=document.createTextNode(' this is a paragraph');
+         nou.appendChild(text);
+        a[g].appendChild(nou);
+          }}
+
+  var list=document.querySelector('#content ul');
+    var liNumber=list.querySelectorAll('li').length;
+
+
+      for(var j=0; j<liNumber; j++)
+        {
+          var li=document.createElement('li');
+              li.innerHTML=liNumber+j+1;
+
+      list.appendChild(li);
+        }
+
+    })();
+
+
+
+
+
+  </script>
+</body>
+
+</html>
