@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .topbar {
     background: black;
     height: 90px;
@@ -55,4 +56,20 @@ footer {
   bottom: 0px;
   left: 25%;
   right: 25%;
+=======
+.register-section {
+    background: #16A085;
+    opacity: 0.87;
+}
+
+
+.register {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+}
+.q-form{
+    width: 50%;
+    margin:auto;
+>>>>>>> 960912a1b737a55da2fcf9f33fc7220faf2902c2
 }
