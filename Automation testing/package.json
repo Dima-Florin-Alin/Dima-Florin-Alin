@@ -1,0 +1,14 @@
+{
+  "name": "florin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "protractor-html-screenshot-reporter": "0.0.21"
+  }
+}
