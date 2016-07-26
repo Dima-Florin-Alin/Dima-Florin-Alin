@@ -1,111 +1,95 @@
-var qshop = angular.module("qshop",['ui.router']);
+var qshop = angular.module("qshop", ['ui.router']);
+
+qshop.config(["$locationProvider", function($locationProvider) {
+  $locationProvider.html5Mode(true);
+}]);
 
 qshop.config(function($stateProvider, $urlRouterProvider) {
-  //
-  // For any unmatched url, redirect to /state1
-  $urlRouterProvider.otherwise("/");
-  //
-  // Now set up the states
-  $stateProvider
-    .state('default', {
-      url: "/",
-      templateUrl: "templates/firstpage.html"
-    })
-    .state('contact', {
+    //
+    // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/");
+    //
+    // Now set up the states
+    $stateProvider
+        .state('default', {
+            url: "/",
+            templateUrl: "templates/firstpage.html"
+        })
+        .state('contact', {
 
-      url: '/contact',
-      templateUrl: "templates/contact.html"
-    })
-    .state('login', {
-      url: '/login',
-      templateUrl: "templates/login.html"
-    })
-    .state('register', {
-      url: '/register',
-      templateUrl: "templates/register.html"
-    })
-    .state('products', {
-      url: '/products',
-      templateUrl: "templates/products.html"
-    });
+            url: '/contact',
+            templateUrl: "templates/contact.html"
+        })
+        .state('login', {
+            url: '/login',
+            templateUrl: "templates/login.html"
+        })
+        .state('register', {
+            url: '/register',
+            templateUrl: "templates/register.html"
+        })
+        .state('products', {
+            url: '/products',
+            templateUrl: "templates/products.html"
+        })
+        .state('product', {
+            url: '/products/:id',
+            templateUrl: "templates/product.html"
+        });
 
 
 
 });
 
-qshop.controller("MainController", function($scope){
+qshop.controller("MainController", function($scope, $stateParams, ProductsRepository) {
 
-  function getProductList() {
-    return [{
-      picture: '../assets/images/products/product-1.jpg',
-      name: 'Limited Price',
-      price: 89,
-      onSale: true,
-      description: 'PRODUCT 1 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.',
-      specifications: [{
-        label: 'prop 1',
-        value: 'value 1',
-      },{
-        label: 'prop 2',
-        value: 'value 2',
-      },{
-        label: 'prop 3',
-        value: 'value 3',
-      }],
-      reviews: [{
-        name: 'OLI 1',
-        text: 'Great product 6/7 with rice'
-      },{
-        name: 'OLI 2',
-        text: 'Great product over 9000 out 10'
-      }],
-      pictures: [
-        '../assets/images/products/product-1.jpg',
-        '../assets/images/products/product-2.jpg',
-        '../assets/images/products/product-3.jpg'
-      ]
-    },{
-      picture: '../assets/images/products/product-2.jpg',
-      name: 'Amazing Product',
-      price: 299,
-      onSale: false,
-      description: ' PRODUCT 2 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.',
-      specifications: [{
-        label: 'prop 1 1',
-        value: 'value 1 1',
-      },{
-        label: 'prop 1 2',
-        value: 'value 1 2',
-      },{
-        label: 'prop 1 3',
-        value: 'value 1 3',
-      }],
-      reviews: [{
-        name: 'OLI 1',
-        text: 'Great product 6/7 with rice'
-      },{
-        name: 'OLI 2',
-        text: 'Great product over 9000 out 10'
-      },
-      {
-        name: 'OLI 1',
-        text: 'Great product 6/7 with rice'
-      }],
-      pictures: [
-        '../assets/images/products/product-1.jpg',
-        '../assets/images/products/product-2.jpg',
-        '../assets/images/products/product-3.jpg'
-      ]
-    },{
-      picture: '../assets/images/products/product-3.jpg',
-      name: 'New product',
-      price: 399,
-      onSale: false,
-      description: ' PRODUCT 3 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.',
-    }]
-  }
+  console.log('Am intrat pe pagina');
 
-  $scope.products = getProductList();
+
+    ProductsRepository.getProductList().then(function(result) {
+        $scope.products = result.data;
+
+        console.log('Products', result.data)
+    }, function(err) {
+        console.error(err);
+    });
+
+$scope.loadProduct= function(){
+
+  console.log("Load product called...", $stateParams);
+  ProductsRepository.getProductList().then(function(result) {
+
+
+    //result.data= toate produsele
+    var productId = $stateParams.id;
+    for(i=0;i<result.data.length; i++)
+    {
+      if(result.data[i].id == productId)
+      $scope.product=result.data[i];
+      break;
+    }
+
+  }, function(err) {
+      console.error(err);
+  });
+
+}
+
+});
+
+
+qshop.factory("ProductsRepository", function($http) {
+
+    var repo = {};
+
+    repo.getProductList = function() {
+        return $http.get("/data/products.json");
+    };
+
+
+    return repo;
+
+
 
 
 
