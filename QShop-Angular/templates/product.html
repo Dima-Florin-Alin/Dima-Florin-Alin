@@ -1,38 +1,23 @@
-<section class="single-product" ng-init="loadProduct()">
+<section class="single-product" ng-controller="ProductController" ng-init="loadProduct()" >
     <div class="container">
-        <div class="row" id=product>
+        <div class="row">
             <div class="col-sm-6">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="{{$index}}"  ng-repeat="picture in product.pictures" ng-class="{active:$first}"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../assets/images/products/product-1.jpg" alt="product1">
+                      <div class="item" ng-repeat="picture in product.pictures" ng-class="{active:$first}">
+                           <img ng-src="{{picture}}" alt="product1">
 
-                            <div class="carousel-caption">
-                                Slide 1
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../assets/images/products/product-2.jpg" alt="product2">
+                           <div class="carousel-caption">
+                               {{product.name}}
+                           </div>
+                       </div>
 
-                            <div class="carousel-caption">
-                                Slide 2
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../assets/images/products/product-3.jpg" alt="product2">
-
-                            <div class="carousel-caption">
-                                Slide 3
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Controls -->
@@ -46,14 +31,15 @@
                     </a>
                 </div>
             </div>
-
-               <div class="product-summary">
+            <div class="col-sm-6">
+                <div class="product-summary">
                     <h2>{{product.name}}</h2>
 
                     <div class="review-number">
-                        <span class="review-count">{{product.reviews.length}}</span> review
+                        <span class="review-count">{{product.reviews ? product.reviews.length : 0}}
+                        </span> review(s)
                     </div>
-                    <p class="price">${{product.price}} </p>
+                    <p class="price">${{product.price}}</p>
 
                     <p class="description">
                         {{product.description}}
@@ -62,12 +48,12 @@
                     <form method="post" class="add-to-cart">
                         <div class="row">
                             <div class="quantity clearfix col-xs-6 col-sm-6 col-md-4">
-                                <input type="button" class="minus" value="-" >
-                                <input type="number" class="input-text qty text" title="Qty" value="1" name="quantity">
-                                <input type="button" class="plus" value="+" >
+                                <input type="button" class="minus" value="-" ng-click="scade(product)">
+                                <input type="number" class="input-text qty text" title="Qty" id="qty" name="quantity" ng-model="quantity">
+                                <input type="button" class="plus" value="+" ng-click="creste(product)">
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3">
-                                <button type="button" class="btn btn-primary">Add to cart</button>
+                                <button type="button" class="btn btn-primary" id="addToCart" ng-click="addToCart()">Add to cart</button>
                             </div>
                         </div>
                     </form>
@@ -76,28 +62,37 @@
         </div>
         <div class="tabs">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs"  role="tablist">
-                <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
-                <li role="presentation"><a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">Specifications</a></li>
-                <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a></li>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" ng-class="{active: tabPanel == 'description'}"><a aria-controls="description" role="tab" data-toggle="tab" ng-click="showTab('description')">Description</a></li>
+                <li role="presentation" ng-class="{active: tabPanel == 'specifications'}"><a aria-controls="specifications" role="tab" data-toggle="tab" ng-click="showTab('specifications')">Specifications</a></li>
+                <li role="presentation" ng-class="{active: tabPanel == 'reviews'}"><a aria-controls="reviews" role="tab" data-toggle="tab" ng-click="showTab('reviews')">Reviews</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="description">
-                    {{product.description}}
+                <div role="tabpanel" class="tab-pane" ng-class="{active: tabPanel == 'description'}" id="description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel
+                    nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing
+                    convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin
+                    sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.
                 </div>
-                <div role="tabpanel" class="tab-pane" id="specifications">
+                <div role="tabpanel" class="tab-pane" ng-class="{active: tabPanel == 'specifications'}" id="specifications">
                     <div class="table-responsive table-bordered">
                         <table class="table">
                             <tbody>
-                              {{product.specifications[productId]}}
+                                <tr ng-repeat="specs in product.specifications">
+                                    <td> {{specs.label}} </td>
+                                    <td> {{specs.value}}</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="reviews">
-                   {{product.reviews[poductId].name}}:{{product.reviews[productId].text}}
+                <div role="tabpanel" class="tab-pane" ng-class="{active: tabPanel == 'reviews'}" id="reviews">
+                  <div ng-repeat="rev in product.reviews">
+                    <span>{{rev.name}} : </span>
+                      <span>{{rev.text}}</span>
+                  </div>
                 </div>
             </div>
 

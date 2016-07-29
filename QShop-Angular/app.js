@@ -1,9 +1,5 @@
 var qshop = angular.module("qshop", ['ui.router']);
 
-qshop.config(["$locationProvider", function($locationProvider) {
-  $locationProvider.html5Mode(true);
-}]);
-
 qshop.config(function($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
@@ -35,6 +31,10 @@ qshop.config(function($stateProvider, $urlRouterProvider) {
         .state('product', {
             url: '/products/:id',
             templateUrl: "templates/product.html"
+        })
+        .state('cart', {
+            url: '/cart',
+            templateUrl: "templates/cart.html"
         });
 
 
@@ -43,51 +43,11 @@ qshop.config(function($stateProvider, $urlRouterProvider) {
 
 qshop.controller("MainController", function($scope, $stateParams, ProductsRepository) {
 
-  console.log('Am intrat pe pagina');
+    console.log('Am intrat pe pagina');
 
 
-    ProductsRepository.getProductList().then(function(result) {
-        $scope.products = result.data;
-
-        console.log('Products', result.data)
-    }, function(err) {
-        console.error(err);
-    });
-
-$scope.loadProduct= function(){
-
-  console.log("Load product called...", $stateParams);
-  ProductsRepository.getProductList().then(function(result) {
 
 
-    //result.data= toate produsele
-    var productId = $stateParams.id;
-    for(i=0;i<result.data.length; i++)
-    {
-      if(result.data[i].id == productId)
-      $scope.product=result.data[i];
-      break;
-    }
-
-  }, function(err) {
-      console.error(err);
-  });
-
-}
-
-});
-
-
-qshop.factory("ProductsRepository", function($http) {
-
-    var repo = {};
-
-    repo.getProductList = function() {
-        return $http.get("/data/products.json");
-    };
-
-
-    return repo;
 
 
 

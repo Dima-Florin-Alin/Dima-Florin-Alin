@@ -5,13 +5,14 @@
         <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="app.css">
-        <link rel="stylesheet" type="text/css" href="common.css">
-        <link rel="stylesheet" type="text/css" href="contact.css">
-        <link rel="stylesheet" type="text/css" href="login.css">
-        <link rel="stylesheet" type="text/css" href="register.css">
-        <link rel="stylesheet" type="text/css" href="products.css">
-        <link rel="stylesheet" type="text/css" href="product.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/register.css">
+        <link rel="stylesheet" type="text/css" href="css/products.css">
+        <link rel="stylesheet" type="text/css" href="css/product.css">
+        <link rel="stylesheet" type="text/css" href="css/cart.css">
 
 
         <script src="assets/js/jquery-2.1.4.js"></script>
@@ -19,12 +20,21 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
         <script src="app.js"></script>
-        <base href="/">
+          <script src="services/products.service.js"></script>
+        <script src="controllers/products.controller.js"></script>
+        <script src="controllers/product.controller.js"></script>
+        <script src="controllers/cart.controller.js"></script>
+          <script src="controllers/menu.controller.js"></script>
+        <script src="services/cart.service.js"></script>
+        <script src="controllers/contact.controller.js"></script>
+        <script src="services/contact.service.js"></script>
+
+        <base href="/index.html">
     </head>
     <body id="top">
-    <div class="page-wrapper" ng-controller="MainController">
+    <div class="page-wrapper">
     <!-- Header -->
-        <header id='header'>
+        <header id='header' >
             <nav class="navbar navbar-default navbar-fixed-top tall">
                 <div class="container">
                     <div class="navbar-header">
@@ -35,12 +45,13 @@
                         <a href="default" class="navbar-brand">QShop</a>
                     </div>
                     <!-- Collection of nav links and other content for toggling -->
-                    <div id="myNavbar" class="collapse navbar-collapse">
+                    <div id="myNavbar" class="collapse navbar-collapse" ng-controller="menuController">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="products">Shop</a></li>
-                            <li><a href="contact">Contact</a></li>
-                            <li><a href="login">Login</a></li>
-                            <li><a href="register">Register</a></li>
+                            <li><a href="/#/products">Shop</a></li>
+                            <li><a href="/#/contact">Contact</a></li>
+                            <li><a href="/#/login">Login</a></li>
+                            <li><a href="/#/register">Register</a></li>
+                            <li><a href="/#/cart"><span class="badge">{{totalProducts}}</span>Cart</a></li>
                         </ul>
                     </div>
                 </div>
