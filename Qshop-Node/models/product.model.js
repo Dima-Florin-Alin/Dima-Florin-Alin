@@ -5,10 +5,6 @@ var Schema = mongoose.Schema;
 
 var Product = new Schema({
 
-    id: {
-        type: Number,
-        required: true
-    },
     picture: String,
     name: {
         type: String,

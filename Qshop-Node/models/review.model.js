@@ -9,8 +9,6 @@ var reviewSchema = new Schema({
     name: String,
     text: String
 
-
-
 });
 
 var review = mongoose.model('review', reviewSchema);

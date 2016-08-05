@@ -1,0 +1,618 @@
+2016/07/15 11:57:01 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Loading user properties from: /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/user.properties 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Loading system properties from: /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/system.properties 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Version 3.0 r1743807 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: java.version=1.7.0_101 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: java.vm.name=OpenJDK 64-Bit Server VM 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: os.name=Linux 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: os.arch=amd64 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: os.version=4.2.0-38-generic 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Max memory     =515375104 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Available Processors =4 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: JMeterHome=/home/internship/Dima-Florin-Alin/apache-jmeter-3.0 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: user.dir  =/home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: PWD       =/home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin 
+2016/07/15 11:57:01 INFO  - jmeter.JMeter: IP: 127.0.1.1 Name: internship-MS-1736 FullName: internship-MS-1736 
+2016/07/15 11:57:02 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform] 
+2016/07/15 11:57:02 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2016/07/15 11:57:03 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/07/15 11:57:03 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/07/15 11:57:06 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/07/15 11:57:07 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2016/07/15 11:57:08 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2016/07/15 11:57:08 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/proxyserver.jks 
+2016/07/15 11:57:08 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement 
+2016/07/15 11:57:08 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler 
+2016/07/15 11:57:09 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.DistributionGraphVisualizer 
+2016/07/15 11:57:09 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2016/07/15 11:57:09 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2016/07/15 11:57:09 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2016/07/15 11:57:09 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2016/07/15 11:57:09 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.SplineVisualizer 
+2016/07/15 11:58:55 INFO  - jmeter.gui.action.template.TemplateManager: Reading templates from:/home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/templates/templates.xml 
+2016/07/15 12:08:27 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2016/07/15 12:08:32 INFO  - jmeter.protocol.http.control.CacheManager: Will only cache the following methods: [GET] 
+2016/07/15 12:18:32 INFO  - jmeter.services.FileServer: Default base='/home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin' 
+2016/07/15 12:18:32 INFO  - jmeter.services.FileServer: Set new base='/home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin' 
+2016/07/15 12:18:32 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2016/07/15 12:18:32 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2016/07/15 12:18:32 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.9 
+2016/07/15 12:18:32 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2016/07/15 12:18:32 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 12:18:32 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 12:18:32 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 12:18:32 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 12:18:32 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2016/07/15 12:18:32 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group Thread Group. 
+2016/07/15 12:18:32 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 12:18:32 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 12:18:32 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2016/07/15 12:18:32 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 12:18:32 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 12:18:32 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = internship-MS-1736 
+2016/07/15 12:18:32 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2016/07/15 12:18:33 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
+2016/07/15 12:18:33 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2016/07/15 12:18:33 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2016/07/15 12:18:33 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-2 
+2016/07/15 12:18:33 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2016/07/15 12:18:33 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2016/07/15 12:18:33 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2016/07/15 12:18:33 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-3 
+2016/07/15 12:18:34 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-4 
+2016/07/15 12:18:34 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-5 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-3 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-3 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-2 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-2 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-6 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-1 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-4 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-4 
+2016/07/15 12:18:35 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-7 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-5 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-5 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-8 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-6 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-6 
+2016/07/15 12:18:36 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-9 
+2016/07/15 12:18:37 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-7 
+2016/07/15 12:18:37 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-7 
+2016/07/15 12:18:37 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-10 
+2016/07/15 12:18:37 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-8 
+2016/07/15 12:18:37 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-8 
+2016/07/15 12:18:38 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-9 
+2016/07/15 12:18:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-9 
+2016/07/15 12:18:38 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-10 
+2016/07/15 12:18:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-10 
+2016/07/15 12:18:38 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 12:18:38 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/07/15 12:26:47 INFO  - jmeter.protocol.http.proxy.ProxyControl: Creating Proxy CA in /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/proxyserver.jks 
+2016/07/15 12:26:50 INFO  - jmeter.protocol.http.proxy.ProxyControl: Created keystore in /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/proxyserver.jks 
+2016/07/15 12:26:50 INFO  - jmeter.protocol.http.proxy.ProxyControl: Creating entry localhost in /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/proxyserver.jks 
+2016/07/15 12:26:53 INFO  - jmeter.protocol.http.proxy.Daemon: Creating Daemon Socket on port: 8080 
+2016/07/15 12:26:53 INFO  - jmeter.protocol.http.proxy.Daemon: Test Script Recorder up and running! 
+2016/07/15 12:27:01 INFO  - jmeter.protocol.http.proxy.Proxy: Proxy will remove the headers: If-Modified-Since,If-None-Match,Host 
+2016/07/15 12:27:10 INFO  - jmeter.protocol.http.proxy.ProxyControl: [48790] Creating entry s-usc1c-nss-117.firebaseio.com in /home/internship/Dima-Florin-Alin/apache-jmeter-3.0/bin/proxyserver.jks 
+2016/07/15 12:27:12 INFO  - jmeter.protocol.http.proxy.Proxy: [48790] KeyStore for SSL loaded OK and put host 's-usc1c-nss-117.firebaseio.com' in map with key (s-usc1c-nss-117.firebaseio.com) 
+2016/07/15 12:27:12 WARN  - jmeter.protocol.http.proxy.Proxy: [48790] Problem with SSL certificate for 's-usc1c-nss-117.firebaseio.com'? Ensure browser is set to accept the JMeter proxy cert: Received fatal alert: unknown_ca 
+2016/07/15 12:27:15 WARN  - jmeter.protocol.http.proxy.Proxy: [48830] Problem with SSL certificate for 's-usc1c-nss-117.firebaseio.com'? Ensure browser is set to accept the JMeter proxy cert: Received fatal alert: unknown_ca 
+2016/07/15 12:32:03 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class org.apache.jmeter.protocol.http.control.HeaderManager@60723c5a java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4925)
+
+2016/07/15 12:36:58 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://9gag.com/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4923)
+	at org.GNOME.Accessibility.AtkSelection.<init>(AtkSelection.java:32)
+
+2016/07/15 12:37:26 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://pixel.rubiconproject.com/tap.php?v=11782|1|14&nid=2181&put=V3UZFwAAARZhd7Xh.CAESEKGnXc1zHDa-346CSLMY2aM&expires=14' contains unsafe characters, will escape it, message:Illegal character in query at index 47: http://pixel.rubiconproject.com/tap.php?v=11782|1|14&nid=2181&put=V3UZFwAAARZhd7Xh.CAESEKGnXc1zHDa-346CSLMY2aM&expires=14 
+2016/07/15 12:37:26 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://pixel.rubiconproject.com/tap.php?v=5364|1|90&nid=2046&expires=90&put=AAAMMiMVLWWQNgM3c9PhAAAAAAA' contains unsafe characters, will escape it, message:Illegal character in query at index 46: http://pixel.rubiconproject.com/tap.php?v=5364|1|90&nid=2046&expires=90&put=AAAMMiMVLWWQNgM3c9PhAAAAAAA 
+2016/07/15 12:37:27 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleText(JTree.java:4938)
+
+2016/07/15 12:37:41 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://gj.symcd.com/
+Query Data:  java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4923)
+	at org.GNOME.Accessibility.AtkSelection.<init>(AtkSelection.java:32)
+
+2016/07/15 12:38:15 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 12:39:00 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://cts.servesharp.net/getuid?url=http://pixel.rubiconproject.com/tap.php?v=71604&nid=3468&put={user_token}&expires={days}' contains unsafe characters, will escape it, message:Illegal character in query at index 98: http://cts.servesharp.net/getuid?url=http://pixel.rubiconproject.com/tap.php?v=71604&nid=3468&put={user_token}&expires={days} 
+2016/07/15 12:39:01 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://a.tribalfusion.com/i.match?p=b10&u={rubicon_user_token}&redirect=http%3A//pixel.rubiconproject.com/tap.php%3Fv%3D111756%26nid%3D3856%26put%3D%24TF_USER_ID_ENC%24%26expires%3D180' contains unsafe characters, will escape it, message:Illegal character in query at index 42: http://a.tribalfusion.com/i.match?p=b10&u={rubicon_user_token}&redirect=http%3A//pixel.rubiconproject.com/tap.php%3Fv%3D111756%26nid%3D3856%26put%3D%24TF_USER_ID_ENC%24%26expires%3D180 
+2016/07/15 12:39:01 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://sync.ipredictive.com/d/sync/cookie/generic?http://pixel.rubiconproject.com/tap.php?v=17149&nid=2861&put=${ADELPHIC_CUID}&expires=30' contains unsafe characters, will escape it, message:Illegal character in query at index 112: http://sync.ipredictive.com/d/sync/cookie/generic?http://pixel.rubiconproject.com/tap.php?v=17149&nid=2861&put=${ADELPHIC_CUID}&expires=30 
+2016/07/15 12:39:55 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://app-3qn55n13cu.marketingautomation.services/prospector/form/MzawMDE1NDI3BgA/M04xNDc0tUzUNTYxTtU1MTa11E20NEjWTTFMNExMtUxKTjMwAAA?_tk=201607|578787ee1a533b2c028b459f' contains unsafe characters, will escape it, message:Illegal character in query at index 145: http://app-3qn55n13cu.marketingautomation.services/prospector/form/MzawMDE1NDI3BgA/M04xNDc0tUzUNTYxTtU1MTa11E20NEjWTTFMNExMtUxKTjMwAAA?_tk=201607|578787ee1a533b2c028b459f 
+2016/07/15 12:40:01 ERROR - jmeter.protocol.http.proxy.Proxy:  java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeToClient(Proxy.java:492)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:247)
+
+2016/07/15 12:40:01 ERROR - jmeter.protocol.http.proxy.Proxy: [50724] Exception when processing sample java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeToClient(Proxy.java:492)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:247)
+
+2016/07/15 12:40:01 WARN  - jmeter.protocol.http.proxy.Proxy: [50724] Exception while writing error java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:916)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeErrorToClient(Proxy.java:567)
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:263)
+
+2016/07/15 12:45:42 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4955)
+
+2016/07/15 12:45:48 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4955)
+
+2016/07/15 12:46:40 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.CPT&DATA={%22pp%22:{%22S%22:%22L%22,%22FC%22:-1,%22BC%22:-1,%22H%22:64,%22BP%22:107,%22CT%22:119,%22IL%22:1},%22ad%22:[-1,-1,1533,805,1533,805,8]}&P=SERP&DA=DB5' contains unsafe characters, will escape it, message:Illegal character in query at index 84: http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.CPT&DATA={%22pp%22:{%22S%22:%22L%22,%22FC%22:-1,%22BC%22:-1,%22H%22:64,%22BP%22:107,%22CT%22:119,%22IL%22:1},%22ad%22:[-1,-1,1533,805,1533,805,8]}&P=SERP&DA=DB5 
+2016/07/15 12:46:40 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.PPT&DATA={%22S%22:44,%22E%22:700,%22T%22:0,%22I%22:0,%22N%22:{%22H%22:{%22S%22:394,%22E%22:675,%22T%22:3}},%22M%22:{}}&P=SERP&DA=DB5' contains unsafe characters, will escape it, message:Illegal character in query at index 84: http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.PPT&DATA={%22S%22:44,%22E%22:700,%22T%22:0,%22I%22:0,%22N%22:{%22H%22:{%22S%22:394,%22E%22:675,%22T%22:3}},%22M%22:{}}&P=SERP&DA=DB5 
+2016/07/15 12:46:43 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.ClientInst&DATA=[{%22T%22:%22CI.Error%22,%22FID%22:%22CI%22,%22Name%22:%22JSError%22,%22Text%22:%22TypeError%3A%20i.parentElement%20is%20null%22,%22Meta%22:%22http%3A//www.bing.com/%22,%22Line%22:2,%22Char%22:%205816,%22Stack%22:%22l/%3C@self%3A2%3A5816%0A_anim%3C/p/%3C.down/%3C@http%3A//www.bing.com/%3A10%3A3567%0A_anim%3C/l/vt@http%3A//www.bing.com/%3A10%3A1813%0A%22}]' contains unsafe characters, will escape it, message:Illegal character in query at index 92: http://www.bing.com/fd/ls/l?IG=160D8D12CFC74F6D83A3E4C2A1974B6E&Type=Event.ClientInst&DATA=[{%22T%22:%22CI.Error%22,%22FID%22:%22CI%22,%22Name%22:%22JSError%22,%22Text%22:%22TypeError%3A%20i.parentElement%20is%20null%22,%22Meta%22:%22http%3A//www.bing.com/%22,%22Line%22:2,%22Char%22:%205816,%22Stack%22:%22l/%3C@self%3A2%3A5816%0A_anim%3C/p/%3C.down/%3C@http%3A//www.bing.com/%3A10%3A3567%0A_anim%3C/l/vt@http%3A//www.bing.com/%3A10%3A1813%0A%22}] 
+2016/07/15 12:46:45 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://www.bing.com/fd/ls/GLinkPing.aspx?IG=7BE75B0A3BA44AE1BA785C8F6B040B89&ID=autosuggest,5003.1&PR={%22i%22:%22k%22}' contains unsafe characters, will escape it, message:Illegal character in query at index 102: http://www.bing.com/fd/ls/GLinkPing.aspx?IG=7BE75B0A3BA44AE1BA785C8F6B040B89&ID=autosuggest,5003.1&PR={%22i%22:%22k%22} 
+2016/07/15 12:46:46 WARN  - jmeter.protocol.http.proxy.HttpRequestHdr: Url 'http://www.bing.com/fd/ls/l?IG=4A99B03FE82D4DC8A49BDEE93408B7A3&Type=Event.CPT&DATA={%22pp%22:{%22S%22:%22L%22,%22FC%22:32,%22BC%22:32,%22H%22:58,%22BP%22:99,%22CT%22:109,%22IL%22:2},%22ad%22:[-1,-1,1523,805,1523,1398,2]}&P=SERP&DA=BN1' contains unsafe characters, will escape it, message:Illegal character in query at index 84: http://www.bing.com/fd/ls/l?IG=4A99B03FE82D4DC8A49BDEE93408B7A3&Type=Event.CPT&DATA={%22pp%22:{%22S%22:%22L%22,%22FC%22:32,%22BC%22:32,%22H%22:58,%22BP%22:99,%22CT%22:109,%22IL%22:2},%22ad%22:[-1,-1,1523,805,1523,1398,2]}&P=SERP&DA=BN1 
+2016/07/15 12:47:44 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 12:47:44 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 12:47:44 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : BTSC 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group BTSC. 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 12:47:47 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 12:47:47 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-1 
+2016/07/15 12:47:47 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : next-episode 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group next-episode. 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 12:47:47 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 12:47:47 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-1 
+2016/07/15 12:47:47 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/07/15 12:47:47 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 12:47:47 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-2 
+2016/07/15 12:47:47 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-2 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-3 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-3 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-1 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-1 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-2 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-2 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-1 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-1 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-4 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-4 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-2 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-2 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-3 
+2016/07/15 12:47:48 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-3 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-5 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-5 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-3 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-3 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-6 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-6 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-4 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-4 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-4 
+2016/07/15 12:47:49 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-4 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-5 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-5 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-7 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-7 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-6 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-6 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-5 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-5 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-8 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-8 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-6 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-6 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-7 
+2016/07/15 12:47:50 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-7 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-9 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-9 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-8 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-8 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-7 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-7 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-10 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-10 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-8 
+2016/07/15 12:47:51 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-8 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-9 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-9 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-9 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-9 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-10 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-10 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-10 
+2016/07/15 12:47:52 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-10 
+2016/07/15 12:47:52 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 12:47:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/07/15 12:57:17 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 12:58:29 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4925)
+
+2016/07/15 13:00:39 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/userlogin java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4923)
+
+2016/07/15 13:00:52 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/ff/auth.php?user_id=302238539&k=f1f08bb1cf50d36257363ad08589d8b6&t=0 java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 13:01:05 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/userlogin java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 13:01:17 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 13:01:27 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4955)
+
+2016/07/15 13:01:30 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/userlogin java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleValue(JTree.java:4953)
+
+2016/07/15 13:02:08 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/PAGES/misc/signup.php?username=${__RandomString(6,abcdefg)}&pass1=30061994&pass2=30061994&email=${__RandomString(6,abcdefg)}@mailinator.com&tz=2&reason=join_now_sign_in_form java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4923)
+
+2016/07/15 13:02:15 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http://next-episode.net/PAGES/misc/signup.php?username=${__RandomString(6,abcdefg)}&pass1=30061994&pass2=30061994&email=${__RandomString(6,abcdefg)}@mailinator.com&tz=2&reason=join_now_sign_in_form java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4923)
+
+2016/07/15 13:04:34 WARN  - jmeter.gui.tree.JMeterTreeNode: Can't get icon for class http:/ java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:195)
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.getIcon(JMeterTreeNode.java:137)
+	at org.apache.jmeter.gui.tree.JMeterCellRenderer.getTreeCellRendererComponent(JMeterCellRenderer.java:48)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentComponent(JTree.java:4611)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getCurrentAccessibleContext(JTree.java:4588)
+	at javax.swing.JTree$AccessibleJTree$AccessibleJTreeNode.getAccessibleSelection(JTree.java:4925)
+
+2016/07/15 13:04:56 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 13:04:56 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 13:04:56 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : BTSC 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group BTSC. 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:04:57 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:04:57 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-1 
+2016/07/15 13:04:57 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : next-episode 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group next-episode. 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:04:57 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:04:57 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-1 
+2016/07/15 13:04:57 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/07/15 13:04:57 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 13:04:57 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-2 
+2016/07/15 13:04:57 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-2 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-3 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-3 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-1 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-1 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-4 
+2016/07/15 13:04:58 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-4 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-2 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-2 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-5 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-5 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-3 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-3 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-6 
+2016/07/15 13:04:59 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-6 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-4 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-4 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-7 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-7 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-5 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-5 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-8 
+2016/07/15 13:05:00 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-8 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-6 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-6 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-1 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-1 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-9 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-9 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-7 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-7 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-2 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-2 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-10 
+2016/07/15 13:05:01 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-10 
+2016/07/15 13:05:02 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-8 
+2016/07/15 13:05:02 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-8 
+2016/07/15 13:05:02 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-9 
+2016/07/15 13:05:02 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-9 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-10 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-10 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-4 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-4 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-5 
+2016/07/15 13:05:03 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-5 
+2016/07/15 13:05:04 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-6 
+2016/07/15 13:05:04 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-6 
+2016/07/15 13:05:04 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-7 
+2016/07/15 13:05:04 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-7 
+2016/07/15 13:05:05 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-3 
+2016/07/15 13:05:05 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-3 
+2016/07/15 13:05:05 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-10 
+2016/07/15 13:05:05 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-10 
+2016/07/15 13:05:06 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-8 
+2016/07/15 13:05:06 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-8 
+2016/07/15 13:05:06 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-9 
+2016/07/15 13:05:06 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-9 
+2016/07/15 13:05:06 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 13:05:06 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/07/15 13:13:08 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 13:13:08 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 13:13:08 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : BTSC 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group BTSC. 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:13:09 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:13:09 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-1 
+2016/07/15 13:13:09 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : next-episode 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group next-episode. 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:13:09 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:13:09 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-1 
+2016/07/15 13:13:09 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/07/15 13:13:09 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 13:13:09 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-2 
+2016/07/15 13:13:09 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-2 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-3 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-3 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-1 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-1 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-4 
+2016/07/15 13:13:10 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-4 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-2 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-2 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-5 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-5 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-3 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-3 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-6 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-6 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-1 
+2016/07/15 13:13:11 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-1 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-4 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-4 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-7 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-7 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-5 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-5 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-8 
+2016/07/15 13:13:12 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-8 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-6 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-6 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-9 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-9 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-7 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-7 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread started: BTSC 1-10 
+2016/07/15 13:13:13 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 2-10 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-3 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-3 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-8 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-8 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-5 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-5 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-9 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-9 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-2 
+2016/07/15 13:13:14 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-2 
+2016/07/15 13:13:15 INFO  - jmeter.threads.JMeterThread: Thread is done: BTSC 1-10 
+2016/07/15 13:13:15 INFO  - jmeter.threads.JMeterThread: Thread finished: BTSC 1-10 
+2016/07/15 13:13:15 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-4 
+2016/07/15 13:13:15 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-4 
+2016/07/15 13:13:16 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-9 
+2016/07/15 13:13:16 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-9 
+2016/07/15 13:13:16 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-6 
+2016/07/15 13:13:16 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-6 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-8 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-8 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-7 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-7 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 2-10 
+2016/07/15 13:13:17 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 2-10 
+2016/07/15 13:13:17 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 13:13:17 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/07/15 13:20:01 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 13:20:01 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 13:20:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 13:20:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : next-episode 
+2016/07/15 13:20:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group next-episode. 
+2016/07/15 13:20:03 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:20:03 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:20:03 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-1 
+2016/07/15 13:20:03 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 13:20:03 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 13:20:03 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-2 
+2016/07/15 13:20:04 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-3 
+2016/07/15 13:20:04 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-4 
+2016/07/15 13:20:05 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-5 
+2016/07/15 13:20:05 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-6 
+2016/07/15 13:20:06 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-7 
+2016/07/15 13:20:06 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-8 
+2016/07/15 13:20:07 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-9 
+2016/07/15 13:20:07 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-10 
+2016/07/15 13:20:15 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-2 
+2016/07/15 13:20:15 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-2 
+2016/07/15 13:20:16 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-1 
+2016/07/15 13:20:16 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-1 
+2016/07/15 13:20:17 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-4 
+2016/07/15 13:20:17 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-4 
+2016/07/15 13:20:18 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-3 
+2016/07/15 13:20:18 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-3 
+2016/07/15 13:20:18 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-5 
+2016/07/15 13:20:18 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-5 
+2016/07/15 13:20:19 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-9 
+2016/07/15 13:20:19 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-9 
+2016/07/15 13:20:19 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-7 
+2016/07/15 13:20:19 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-7 
+2016/07/15 13:20:20 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-10 
+2016/07/15 13:20:20 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-10 
+2016/07/15 13:20:20 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-6 
+2016/07/15 13:20:20 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-6 
+2016/07/15 13:20:22 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-8 
+2016/07/15 13:20:22 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-8 
+2016/07/15 13:20:22 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 13:20:22 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/07/15 13:23:04 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/07/15 13:23:04 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/07/15 13:23:04 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/07/15 13:23:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : next-episode 
+2016/07/15 13:23:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group next-episode. 
+2016/07/15 13:23:16 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/07/15 13:23:16 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 5 perThread 500.0 delayedStart=false 
+2016/07/15 13:23:16 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-1 
+2016/07/15 13:23:16 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/07/15 13:23:16 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/07/15 13:23:16 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-2 
+2016/07/15 13:23:17 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-3 
+2016/07/15 13:23:17 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-4 
+2016/07/15 13:23:18 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-5 
+2016/07/15 13:23:18 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-6 
+2016/07/15 13:23:19 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-7 
+2016/07/15 13:23:19 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-8 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-1 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-1 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-9 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-2 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-2 
+2016/07/15 13:23:20 INFO  - jmeter.threads.JMeterThread: Thread started: next-episode 1-10 
+2016/07/15 13:23:21 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-3 
+2016/07/15 13:23:21 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-3 
+2016/07/15 13:23:22 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-4 
+2016/07/15 13:23:22 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-4 
+2016/07/15 13:23:23 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-5 
+2016/07/15 13:23:23 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-5 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-7 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-7 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-8 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-8 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-6 
+2016/07/15 13:23:24 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-6 
+2016/07/15 13:23:25 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-9 
+2016/07/15 13:23:25 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-9 
+2016/07/15 13:23:25 INFO  - jmeter.threads.JMeterThread: Thread is done: next-episode 1-10 
+2016/07/15 13:23:25 INFO  - jmeter.threads.JMeterThread: Thread finished: next-episode 1-10 
+2016/07/15 13:23:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/07/15 13:23:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 

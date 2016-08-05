@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// create a review Schema
+// create a specs Schema
 
 
 var specs = new Schema({
